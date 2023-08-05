@@ -1,0 +1,158 @@
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+section 
+  width: 100%
+
+p 
+    margin: 0
+    padding: 0
+
+// Botao Whatsapp
+.whats
+    position: fixed
+    width: 60px
+    height: 60px
+    bottom: 40px
+    right: 40px
+    background-color: #25d366
+    border-radius: 50px
+    z-index: 1000
+    box-shadow: 1px 1px 3px
+
+//NavBAr
+.icone
+    margin-top: 15px
+    margin-left: 15px
+
+.link-nav 
+    position: relative
+    color: #074BAE
+    
+.link-nav::before
+    content: ""
+    position: absolute
+    // display: block
+    inset: 0
+    z-index: 1
+    transition: transform 300ms ease
+    transform: scaleX(0)
+    border-bottom: 2px solid #CA6CE6
+    color: #444444
+    
+.link-nav:hover::before
+    transform: scaleX(1)
+    transition-duration: 500ms
+    
+//Seção Intro
+.header-principal
+
+    backdrop-filter: blur(20px)
+    background-color: rgb(255, 255, 255, 0.5)
+    box-shadow: 0px 1px 12px rgb(0, 0, 0, 0.25)
+    border: 1px solid rgb(255, 255, 255, 0.3)
+    
+.imagemIconeHeade
+    height: 10%
+
+.section-intro
+    height: 100vh
+    
+.img-principal
+    animation: moveUpDown 2s ease-in-out infinite
+    position: relative
+
+.container-intro
+    max-width: 500px
+
+.seta-intro 
+
+    
+    position: absolute
+    bottom: 1%
+    left: 3%
+    font-size: 2.5rem
+
+.bolha-direita
+    position: absolute
+    bottom: 1%
+    right: 1%
+    width: 200px
+
+.bolha-esquerda
+    position: absolute
+    bottom: 1%
+    left: 1%
+    width: 200px
+
+//Mapa
+.map-response
+    overflow: hidden
+    padding-bottom: 56.25%
+    position: relative
+    height: 0
+    display: flex
+    justify-content: center
+
+.map-response iframe 
+    top: 7%
+    height: 80%
+    width: 80%
+    position: absolute
+
+//Banners de Apresentação
+.img-icone 
+    filter: invert(100%)
+    position: relative
+    width: 50px
+
+.img-icone-bolha
+    position: absolute
+    right: 7%
+    width: 80px
+
+.banner-apresentacao
+    flex-direction: row
+    justify-content: start
+    align-items: center
+    gap: 2rem
+
+    margin: 2rem 0
+    width: 100%
+    border-radius: 20px
+
+    background-color: #5937A0
+    padding: 1.75rem 0
+    padding-left: 5%
+
+//Footer
+.link-footer
+    text-decoration: none
+    transition: .4s
+    color: #fff
+
+.link-footer:hover
+    transition: .4s
+    color: #074BAE
+
+//Forms
+.input-contato 
+    margin-bottom: 10px
+    border-radius: 12px
+
+//KeyFrames
+@keyframes moveUpDown
+    0%, 100% 
+        transform: translateY(0)
+    50% 
+        transform: translateY(-20px)
+
+
+.slides-comofeito
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 110px
